@@ -1,0 +1,57 @@
+---
+import Logo from "./logo.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>V3 Technology</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-purple relative">
+    <div
+      class="absolute h-[85vh] inset-x-0 bg-[length:auto_100%] sm:min-h-screen sm:bg-cover bg-blend-lighten
+        bg-no-repeat bg-[rgba(65,63,140,.5)]
+        bg-[center_bottom]
+        bg-[url('https://res.cloudinary.com/nmyvision/image/upload/w_auto,f_auto,c_scale,w_600/v1620190009/misc/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg')]
+        sm:bg-[url('https://res.cloudinary.com/nmyvision/image/upload/w_auto,f_auto,c_scale,w_2048/v1620190009/misc/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg')]"
+    >
+    </div>
+
+    <div class="relative">
+      <div class="flex items-center justify-center sm:min-h-screen h-[85vh]">
+        <div>
+          <Logo />
+          <p
+            class="font-sans text-3xl text-center uppercase text-white text-opacity-70"
+          >
+            Technology
+          </p>
+        </div>
+      </div>
+
+      <section
+        class="w-full max-w-4xl px-10 m-auto py-28 sm:text-4xl text-2xl tracking-wide"
+      >
+        <p>
+          <h1 class="inline font-sans text-white mr-2">V3 Technology</h1><span
+            class="font-serif font-thin text-purple-lightest leading-loose"
+            >is a consulting firm specializing in creating software initiatives
+            that are clearly aligned to business goals.</span
+          >
+        </p><div
+          class="mt-60 text-center font-serif font-thin text-purple-lightest text-xs text-opacity-70"
+        >
+          © {new Date().getFullYear()} - V3 Technology
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
